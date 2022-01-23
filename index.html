@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Basic JavaScript Calculator</title>
-</head>
-<body>
-    
-</body>
-<script src="js/script.js"></script>
+  </head>
+  <body class="remove-margin">
+    <div class="container center-x">
+      <div class="calculator-wrapper column flex full-width">
+        <div class="flex center-x">
+          <h3 class="remove-margin">Basic JS Calculator</h3>
+        </div>
+        <div class="">
+            <h6 style="color: red;" id="err" class="remove-margin"></h6>
+          </div>
+        <div class="column flex">
+          <h4 class="remove-margin">Value 1</h4>
+          <input type="text" id="valueOne" />
+        </div>
+        <div class="column flex">
+          <h4 class="remove-margin">Value 2</h4>
+          <input type="text" id="valueTwo" />
+        </div>
+        <div class="column flex">
+          <h4 class="remove-margin">Operation</h4>
+          <div class="column flex">
+            <select id="operation" class="full-width">
+              <option value="add">Add</option>
+              <option value="subtract">Subtract</option>
+              <option value="multiply">Multiply</option>
+              <option value="divide">Divide</option>
+              <option value="modulus">Modulus</option>
+            </select>
+          </div>
+        </div>
+        <div class="column flex">
+          <div class="row">
+            <button id="calc" class="calc-btn">Calculate</button>
+            <input type="text" id="result" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
 </html>

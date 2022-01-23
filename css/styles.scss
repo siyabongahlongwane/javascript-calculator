@@ -1,0 +1,44 @@
+// Colours
+$blue: #41a5de;
+$grey: #d4d4d4;
+.remove-margin {
+  margin: 0;
+}
+
+.center-x {
+  justify-content: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: $grey;
+}
+
+.calculator-wrapper {
+  border: 1px solid $blue;
+  padding: 10px;
+  border-radius: 1rem;
+  background: black;
+  color: white;
+}
+.flex {
+  display: flex;
+}
+.row,
+.column {
+  gap: 0.5rem;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.calc-btn {
+  background: $blue;
+  border-color: $blue;
+  border-radius: 1rem;
+  color: $grey;
+}
